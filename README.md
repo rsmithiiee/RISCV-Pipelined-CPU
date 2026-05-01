@@ -130,19 +130,12 @@ cd RISCV-Proc/Processor
 
 ## Running the Simulation
 
-### With Icarus Verilog (iverilog)
+### With Vivado
 
-```bash
-cd Processor/
-
-# Compile all source files and the testbench
-iverilog -g2012 -o sim \
-  tb.sv cpu.sv instruction_decoder.sv ALU.sv \
-  PC.sv register_file.sv rom.sv ram.sv
-
-# Run the simulation
-vvp sim
-```
+1. Create a new RTL project and add all `.sv` files from `Processor/` as sources.
+2. Set `tb.sv` as the simulation top.
+3. In simulation settings, set the working directory to `Processor/` so the `.dat` init files are found.
+4. Run Behavioral Simulation.
 
 After the run completes, two trace files are generated:
 
@@ -150,13 +143,6 @@ After the run completes, two trace files are generated:
 |---|---|
 | `pc.txt` | Program counter value at each clock cycle |
 | `data.txt` | Write-back result and destination register per cycle |
-
-### With Vivado
-
-1. Create a new RTL project and add all `.sv` files from `Processor/` as sources.
-2. Set `tb.sv` as the simulation top.
-3. In simulation settings, set the working directory to `Processor/` so the `.dat` init files are found.
-4. Run Behavioral Simulation.
 
 ### Using a Different Program
 
