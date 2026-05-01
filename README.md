@@ -207,6 +207,6 @@ The PDF reports cover design rationale, implementation details, and cycle-accura
 
 ---
 
-## Contributing
+## License
 
 This project was developed as academic coursework. Please respect academic integrity policies at your institution if you are a student using this project as a reference.
