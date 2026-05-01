@@ -4,6 +4,8 @@ A fully-featured, 5-stage pipelined RISC-V RV32I processor implemented in System
 
 Authors: Haydon Behl · Mihir Phadke · Ryan Smith
 
+Forked from original repo just so I could edit the README to my liking.
+
 ---
 
 ## Table of Contents
